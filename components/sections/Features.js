@@ -29,7 +29,7 @@ const Feature = ({ title, description, icon, index, lastIndex }) => {
           {title}
         </span>
       </div>
-      <p className='relative z-10 max-w-xs px-10 text-sm text-[#d4e8ffb3]'>
+      <p className='relative z-10 max-w-xs pl-10 pr-3 text-sm text-[#d4e8ffb3]'>
         {description}
       </p>
     </div>

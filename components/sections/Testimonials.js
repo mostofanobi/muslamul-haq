@@ -16,10 +16,10 @@ const Testimonials = () => {
       />
 
       <div className='relative z-10 grid grid-cols-1 gap-3 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,92,244,.12)_0%,rgba(1,5,19,.12)_100%)] py-10 lg:grid-cols-2'>
-        {testimonials.map((feature, index) => (
-          <Feature
+        {testimonials.map((review, index) => (
+          <Review
             key={index}
-            {...feature}
+            {...review}
             index={index}
             lastIndex={testimonials.length - 1}
           />
@@ -29,7 +29,7 @@ const Testimonials = () => {
   );
 };
 
-const Feature = ({ author, comment }) => {
+const Review = ({ author, comment, country }) => {
   return (
     <div className='card group relative mx-auto flex max-w-2xl flex-col overflow-hidden rounded-2xl border px-0 py-10 lg:max-w-none'>
       <div className='pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-t from-[#3C3B6150] to-transparent opacity-0 transition duration-200 group-hover:opacity-100' />
@@ -38,12 +38,14 @@ const Feature = ({ author, comment }) => {
         <QuoteUpIcon />
       </div>
 
-      <div className='relative z-10 mb-8 px-10 text-lg font-bold'>
+      <div className='relative z-10 mb-2 px-10 text-lg font-bold'>
         <div className='absolute inset-y-0 left-0 h-6 w-1 origin-center rounded-br-full rounded-tr-full bg-[hsla(221,28%,43%,.4)] transition-all duration-200 group-hover:h-8 group-hover:bg-[#005cf4] group-hover:shadow-[0_0_100px_25px_#005cf4,0_0_40px_2px_#005cf4]' />
         <span className='inline-block text-[#d4e8ff] transition duration-200 group-hover:translate-x-2'>
           {author}
         </span>
       </div>
+
+      <p className='mb-8 px-10 text-sm'>{country}</p>
 
       <blockquote className='px-10 text-lg/8'>“{comment}”</blockquote>
     </div>

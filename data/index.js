@@ -33,37 +33,38 @@ export const hero = {
 
 export const features = [
   {
-    title: '4year+ Experienced Video Editor',
+    title: '4+ Years of Experience',
     description:
-      'Built for engineers, developers, dreamers, thinkers and doers.',
+      'Skilled in video editing, motion graphics, and storytelling to enhance content quality.',
     icon: <Briefcase07Icon />
   },
   {
-    title: 'Creating Engaging Hook',
+    title: 'Creating Engaging Hooks',
     description:
-      "It's as easy as using an Apple, and as expensive as buying one.",
+      'Attention-grabbing intros that keep viewers engaged and improve watch time.',
     icon: <RepeatIcon />
   },
   {
     title: 'Fast Delivery',
     description:
-      'Our prices are best in the market. No cap, no lock, no credit card required.',
+      'High-quality edits with a quick turnaround time to meet tight deadlines.',
     icon: <ZapIcon />
   },
   {
     title: 'Friendly Communication',
-    description: 'We just cannot be taken down by anyone.',
+    description:
+      'Clear, professional, and responsive communication throughout.',
     icon: <Comment01Icon />
   },
   {
     title: 'Affordable Pricing',
-    description: 'You can simply share passwords instead of buying new seats',
+    description: 'Top-tier editing services at a budget-friendly price point.',
     icon: <SaveMoneyDollarIcon />
   },
   {
     title: '24/7 Support',
     description:
-      'We are available a 100% of the time. Atleast our AI Agents are.',
+      'Available anytime to assist with edits, revisions, and creative guidance.',
     icon: <Clock02Icon />
   }
 ];
