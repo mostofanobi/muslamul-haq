@@ -10,7 +10,7 @@ const Pricing = () => {
       <div className='relative mx-auto max-w-7xl px-6 lg:px-8'>
         <SectionHeader heading={pricing.heading} subtitle={pricing.subtitle} />
 
-        <div className='isolate mx-auto mb-20 mt-16 grid max-w-md grid-cols-1 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,92,244,.32)_0%,rgba(1,5,19,.12)_100%)] sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
+        <div className='isolate mx-auto grid max-w-md grid-cols-1 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,92,244,.32)_0%,rgba(1,5,19,.12)_100%)] py-10 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
           {pricing.data.map((plan, index) => (
             <div
               key={plan.title}

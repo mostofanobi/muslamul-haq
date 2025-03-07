@@ -52,12 +52,9 @@ export const Projects = () => {
         />
 
         <div className='w-full' ref={containerRef}>
-          <div ref={ref} className='relative pb-20'>
+          <div ref={ref} className='relative pb-10'>
             {projects.map((item, index) => (
-              <div
-                key={index}
-                className='flex justify-start pt-10 md:gap-10 md:pt-40'
-              >
+              <div key={index} className='flex justify-start pt-10 md:gap-10'>
                 <div className='sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm'>
                   <div className='absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#010513] md:left-3'>
                     <div className='h-3 w-3 rounded-full border bg-[#005cf4] shadow-[0_0_100px_25px_#005cf4,0_0_40px_2px_#005cf4]' />

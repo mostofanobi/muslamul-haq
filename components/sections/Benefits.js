@@ -5,13 +5,13 @@ import SectionHeader from '../common/SectionHeader';
 const Benefits = () => {
   return (
     <section id='contact' className='relative'>
-      <div className='relative mx-auto max-w-xl px-6 pb-32 lg:max-w-7xl lg:px-8'>
+      <div className='relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8'>
         <SectionHeader
           subtitle={benefits.subtitle}
           heading={benefits.heading}
         />
 
-        <div className='relative grid grid-cols-1 gap-3 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,92,244,.32)_0%,rgba(1,5,19,.12)_100%)] pt-10 lg:grid-cols-2'>
+        <div className='relative grid grid-cols-1 gap-3 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,92,244,.32)_0%,rgba(1,5,19,.12)_100%)] py-10 lg:grid-cols-2'>
           {benefits.data.map((benefit) => (
             <BenefitCard key={benefit.title} {...benefit} />
           ))}

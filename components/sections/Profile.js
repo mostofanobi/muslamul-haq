@@ -65,7 +65,7 @@ const Profile = () => {
                 <Button
                   isIconOnly
                   onPress={onClose}
-                  className='card absolute right-3 top-3 z-50 text-white'
+                  className='card absolute right-3 top-3 z-50 border text-white'
                 >
                   <Cancel01Icon />
                 </Button>
@@ -102,7 +102,7 @@ const Profile = () => {
                       <Button
                         key={contact.title}
                         isIconOnly
-                        className='card text-white'
+                        className='card border text-white'
                         as={Link}
                         href={contact.href}
                         passHref
@@ -115,7 +115,7 @@ const Profile = () => {
                   <Button
                     onPress={onClose}
                     startContent={<Download02Icon />}
-                    className='card text-white'
+                    className='card border text-white'
                   >
                     Download CV
                   </Button>
