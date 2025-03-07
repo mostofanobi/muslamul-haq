@@ -35,14 +35,7 @@ const Profile = () => {
                   />
                 </div>
               </div>
-              <div className='card relative -ml-3 flex h-12 w-auto items-center justify-center rounded-r-full border border-l-0 px-5'>
-                {/* <div className='relative h-full w-full overflow-hidden rounded-full'>
-              <Image
-                fill
-                src={muslamulHaq.src}
-                className='rounded-full object-cover'
-              />
-            </div> */}
+              <div className='card relative -ml-3 flex h-12 w-auto items-center justify-center rounded-r-full border border-l-0 px-5 !backdrop-blur-3xl'>
                 <p className='font-medium text-white'>Muslamul Haq</p>
               </div>
             </button>

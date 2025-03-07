@@ -1,3 +1,5 @@
+import { Tooltip } from '@heroui/react';
+
 import Link from 'next/link';
 
 import { contacts } from '@/data';
@@ -33,26 +35,30 @@ const Contact = () => {
 
 const ContactCard = ({ title, icon, description, href }) => {
   return (
-    <Link
-      href={href}
-      target='_blank'
-      passHref={true}
-      className='card group relative flex flex-col overflow-hidden rounded-3xl border px-0 py-6 sm:py-8'
-    >
-      <div className='pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-t from-[#e2e8ff1f] to-transparent opacity-0 transition duration-200 group-hover:opacity-100' />
+    <Tooltip content={description} className='bg-[#005cf4] text-white'>
+      <Link
+        href={href}
+        target='_blank'
+        passHref={true}
+        className='card group relative flex flex-col overflow-hidden rounded-3xl border px-0 py-6 sm:py-8'
+      >
+        <div className='pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-t from-[#e2e8ff1f] to-transparent opacity-0 transition duration-200 group-hover:opacity-100' />
 
-      <div className='relative z-10 mb-4 px-6 text-zinc-100 sm:px-10'>
-        {icon}
-      </div>
-      <div className='relative z-10 mb-8 px-6 text-lg font-bold sm:px-10'>
-        <div className='absolute inset-y-0 left-0 h-6 w-1 origin-center rounded-br-full rounded-tr-full bg-[hsla(221,28%,43%,.4)] transition-all duration-200 group-hover:h-8 group-hover:bg-[#005cf4] group-hover:shadow-[0_0_100px_25px_#005cf4,0_0_40px_2px_#005cf4]' />
-        <span className='inline-block text-zinc-100 transition duration-200 group-hover:translate-x-2'>
-          {title}
-        </span>
-      </div>
+        <div className='relative z-10 mb-4 px-6 text-zinc-100 sm:px-10'>
+          {icon}
+        </div>
+        <div className='relative z-10 mb-8 px-6 text-lg font-bold sm:px-10'>
+          <div className='absolute inset-y-0 left-0 h-6 w-1 origin-center rounded-br-full rounded-tr-full bg-[hsla(221,28%,43%,.4)] transition-all duration-200 group-hover:h-8 group-hover:bg-[#005cf4] group-hover:shadow-[0_0_100px_25px_#005cf4,0_0_40px_2px_#005cf4]' />
+          <span className='inline-block text-zinc-100 transition duration-200 group-hover:translate-x-2'>
+            {title}
+          </span>
+        </div>
 
-      <blockquote className='px-6 text-lg/8 sm:px-10'>{description}</blockquote>
-    </Link>
+        <blockquote className='px-6 text-lg/8 sm:px-10'>
+          {description}
+        </blockquote>
+      </Link>
+    </Tooltip>
   );
 };
 

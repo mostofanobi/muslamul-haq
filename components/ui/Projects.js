@@ -52,7 +52,7 @@ export const Projects = () => {
         />
 
         <div className='w-full' ref={containerRef}>
-          <div ref={ref} className='relative pb-10'>
+          <div ref={ref} className='relative'>
             {projects.map((item, index) => (
               <div key={index} className='flex justify-start pt-10 md:gap-10'>
                 <div className='sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm'>
@@ -64,13 +64,13 @@ export const Projects = () => {
                   </h3>
                 </div>
 
-                <div className='relative w-full pl-20 pr-4 md:pl-4'>
+                <div className='relative w-full pl-20 md:pl-0'>
                   <h3 className='mb-4 block text-left text-2xl font-bold text-[#d4e8ff] md:hidden'>
                     {item.title}
                   </h3>
 
                   <div
-                    className={`${item.type === 'reel' ? 'lg:grid-cols-2' : ''} relative z-10 grid grid-cols-1 gap-3 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,92,244,.12)_0%,rgba(1,5,19,.12)_100%)] py-10`}
+                    className={`${item.type === 'reel' ? 'lg:grid-cols-2' : ''} relative z-10 grid grid-cols-1 gap-3 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,92,244,.12)_0%,rgba(1,5,19,.12)_100%)] pb-10`}
                   >
                     {item.data.map((videoId, index) => {
                       return (
