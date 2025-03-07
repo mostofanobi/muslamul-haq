@@ -1,0 +1,24 @@
+{
+  "extends": ["next/core-web-vitals", "airbnb", "prettier"],
+  "rules": {
+    "import/no-extraneous-dependencies": "off",
+    "react/button-has-type": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": [
+      "error",
+      { "namedComponents": "arrow-function" }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/no-redundant-roles": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off"
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": [
+    "tailwind.config.ts",
+    "next.config.mjs",
+    "postcss.config.js"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "protfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev & npx next-video sync -w",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@heroui/react": "^2.6.14",
+    "@tippyjs/react": "^4.2.6",
+    "@videojs/http-streaming": "^3.17.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "embla-carousel": "^8.3.0",
+    "embla-carousel-react": "^8.3.0",
+    "framer-motion": "^12.0.6",
+    "gsap": "^3.12.5",
+    "hugeicons-react": "^0.3.0",
+    "lenis": "^1.1.6",
+    "motion": "^12.0.11",
+    "next": "14.2.4",
+    "next-themes": "^0.3.0",
+    "next-video": "^2.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-intersection-observer": "^9.15.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.14",
+    "tailwind-merge": "^3.0.1",
+    "video.js": "^8.21.0",
+    "videojs-youtube": "^3.0.1"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "20.14.9",
+    "@types/react": "18.3.3",
+    "eslint": "^8",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.1"
+  }
+}
