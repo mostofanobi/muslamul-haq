@@ -57,17 +57,24 @@ const Pricing = () => {
           ))}
         </div>
 
-        <dl className='card mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-3xl sm:grid-cols-2 lg:grid-cols-4'>
+        <dl className='mt-16 grid grid-cols-1 overflow-hidden rounded-3xl border sm:grid-cols-2 lg:grid-cols-4'>
           {services.data.map((service, index) => (
             <div
               key={index}
-              className='card relative flex flex-col overflow-hidden rounded-md p-8'
+              className={`card group relative flex flex-col overflow-hidden px-0 py-8 sm:border-l`}
             >
-              <dt className='mb-2 font-semibold text-[#d4e8ff]'>
+              <div className='pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-t from-[#3C3B6150] to-transparent opacity-0 transition duration-200 group-hover:opacity-100' />
+
+              <div className='relative z-10 mb-4 px-10 text-[#d4e8ff]'>
                 {service.icon}
-              </dt>
-              <dt className='mb-6 text-lg text-[#d4e8ff]'>{service.title}</dt>
-              <dd className='tracking-tight'>
+              </div>
+              <div className='relative z-10 mb-2 px-10 text-lg font-bold'>
+                <div className='absolute inset-y-0 left-0 h-6 w-1 origin-center rounded-br-full rounded-tr-full bg-[hsla(221,28%,43%,.4)] transition-all duration-200 group-hover:h-8 group-hover:bg-[#005cf4] group-hover:shadow-[0_0_100px_25px_#005cf4,0_0_40px_2px_#005cf4]' />
+                <span className='inline-block font-semibold text-[#d4e8ff] transition duration-200 group-hover:translate-x-2'>
+                  {service.title}
+                </span>
+              </div>
+              <div className='px-10'>
                 <p className='flex items-baseline gap-x-2'>
                   <span className='text-3xl tracking-tight text-[#d4e8ff]'>
                     ${service.price}
@@ -79,7 +86,7 @@ const Pricing = () => {
                 {service.remarks && (
                   <span className='mt-2 block text-xs'>{service.remarks}</span>
                 )}
-              </dd>
+              </div>
             </div>
           ))}
         </dl>

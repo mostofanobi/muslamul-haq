@@ -76,48 +76,48 @@ export const services = {
     {
       title: 'Documentary',
       price: 25,
-      icon: <Video02Icon size={28} strokeWidth={0.8} />,
+      icon: <Video02Icon />,
       remarks: '(up to 12 minute)'
     },
     {
       title: 'Short Film',
       price: 100,
-      icon: <FlimSlateIcon size={28} strokeWidth={0.8} />,
+      icon: <FlimSlateIcon />,
       remarks: '(up to 30 minute)'
     },
     {
       title: 'Talking Head Video',
       price: 25,
-      icon: <Mic02Icon size={28} strokeWidth={0.8} />,
+      icon: <Mic02Icon />,
       remarks: '(up to 12 minute)'
     },
     {
       title: 'Podcast / Podcast to Shorts',
       price: 1.5,
       pricePer: 'minute',
-      icon: <HeadsetIcon size={28} strokeWidth={0.8} />
+      icon: <HeadsetIcon />
     },
     {
       title: 'Ads',
       price: 5,
-      icon: <Megaphone02Icon size={28} strokeWidth={0.8} />,
+      icon: <Megaphone02Icon />,
       pricePer: 'minute'
     },
     {
       title: 'Reels / Shorts',
       price: 15,
-      icon: <Film01Icon size={28} strokeWidth={0.8} />
+      icon: <Film01Icon />
     },
     {
       title: 'Vlog',
       price: 1.5,
       pricePer: 'minute',
-      icon: <CameraVideoIcon size={28} strokeWidth={0.8} />
+      icon: <CameraVideoIcon />
     },
     {
       title: 'Thumbnail',
       price: 5,
-      icon: <Image01Icon size={28} strokeWidth={0.8} />
+      icon: <Image01Icon />
     }
   ]
 };
