@@ -1,4 +1,5 @@
 import { Button } from '@heroui/react';
+import { MailSend01Icon } from 'hugeicons-react';
 
 import Link from 'next/link';
 
@@ -44,6 +45,7 @@ const Hero = () => {
               href='mailto:muslamul.siam.official@gmail.com'
               size='lg'
               className='card border text-white'
+              endContent={<MailSend01Icon />}
             >
               Get in Touch
             </Button>
