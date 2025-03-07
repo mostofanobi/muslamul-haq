@@ -17,22 +17,11 @@ module.exports = {
       borderColor: {
         DEFAULT: 'hsla(221,28%,43%,.3)'
       },
-      borderRadius: {
-        '4xl': '2.5rem'
-      },
-      maxWidth: {
-        'screen-3xl': '1840px'
-      },
       transitionDuration: {
         DEFAULT: '350ms'
       },
       transitionTimingFunction: {
         // DEFAULT: 'cubic-bezier(0.68, -0.6, 0.32, 1.6)'
-      },
-      colors: {
-        accent: 'var(--color-accent)',
-        light: 'var(--color-light)',
-        dark: 'var(--color-dark)'
       },
       fontFamily: {
         jakarta: 'var(--font-jakarta)'

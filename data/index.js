@@ -39,7 +39,7 @@ export const features = [
     icon: <Briefcase07Icon />
   },
   {
-    title: 'Creating Engaging Hook.',
+    title: 'Creating Engaging Hook',
     description:
       "It's as easy as using an Apple, and as expensive as buying one.",
     icon: <RepeatIcon />

@@ -14,7 +14,6 @@ import { Cancel01Icon, Download02Icon } from 'hugeicons-react';
 import Link from 'next/link';
 
 import { contacts } from '@/data';
-// import Image from 'next/image';
 import muslamulHaq from '@/public/images/muslamul-haq.jpeg';
 
 const Profile = () => {

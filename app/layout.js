@@ -24,9 +24,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
         className={`${jakarta.variable} relative overscroll-none scroll-smooth bg-[#010513] font-jakarta text-[#d4e8ffb3]`}
       >
-        {/* <SmoothScroll> */}
         <HeroUIProvider>{children}</HeroUIProvider>
-        {/* </SmoothScroll> */}
       </body>
     </html>
   );

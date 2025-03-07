@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section className='relative'>
-      <div className='mx-auto max-w-7xl px-6 pb-20 pt-20 lg:px-8 lg:pt-32'>
+      <div className='mx-auto max-w-7xl px-6 pb-32 pt-20 lg:px-8 lg:pt-32'>
         <div className='relative flex flex-col items-center text-center'>
           <div className='mb-5 flex items-center justify-center gap-4 text-[12px] font-medium leading-6 lg:justify-start'>
             <p>Video editor</p>
